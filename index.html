@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Pengenalan Javascript</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-            body {
-                margin: 0;
-                padding: 0;
-            }
-            input {
-                margin-bottom: 2rem;
-                width: 100%;
-                padding: 1rem 2rem;
-                border-radius: 8px;
-            }
+  <head>
+    <title>Pengenalan Javascript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        margin-bottom: 2rem;
+        width: 100%;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+      }
 
-            .container {
-                max-width: 900px;
-                margin: 2rem auto;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <input
-                type="text"
-                placeholder="Cari!"
-                onkeyup="checkOnKeyUp(this)"
-            />
-            <div id="result"></div>
-            <script src="./script.js"></script>
-        </div>
-    </body>
+      .container {
+        max-width: 900px;
+        margin: 2rem auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" placeholder="Cari!" onkeyup="checkOnKeyUp(this)" />
+      <div id="result"></div>
+      <script src="./dataAegis.js"></script>
+      <script src="./script.js"></script>
+    </div>
+  </body>
 </html>
