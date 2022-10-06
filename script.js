@@ -45,6 +45,7 @@ const checkOnKeyUp = (inputdata) => {
             );
         });
 
+        //menampilkan data mahasiswa yang dimasukkan pada search bar
         const resultContainer = document.getElementById("result");
         resultContainer.innerHTML = "";
 
