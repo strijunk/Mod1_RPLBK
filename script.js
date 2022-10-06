@@ -1,19 +1,3 @@
-const filterArray = aegis.filter((nama) => {
-    let { nama_lengkap } = nama;
-    return nama.nim % 2 == 0;
-});
-
-// const checkOnKeyUps = (inputhobi) => {
-//     console.log("check");
-//     for (i = 0; i <= filterArray.length; i++) {
-//         if (inputhobi === filterArray[i].hobi) {
-//             console.log("email:", filterArray[i].id_line);
-//         } else {
-//             console.log("data tidak ditemukan");
-//         }
-//     }
-// };
-
 const checkOnKeyUp = (inputdata) => {
     // get input value
     if (inputdata) {
@@ -21,14 +5,13 @@ const checkOnKeyUp = (inputdata) => {
 
         // search mahasiswa using keyword
         const mahasiswas = aegis.filter((item) => {
-            return (
-                (item.nim % 2 == 0 &&
-                    item.nama_lengkap
+            return item.nim % 2 == 0 && (
+                (item.nama_lengkap
                         .toLowerCase()
                         .includes(keyword.toLowerCase())) ||
-                item.nama_panggilan
+                (item.nama_panggilan
                     .toLowerCase()
-                    .includes(keyword.toLowerCase()) ||
+                    .includes(keyword.toLowerCase())) ||
                 (item.nomor_telepon &&
                     item.nomor_telepon
                         .toString()
