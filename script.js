@@ -2,10 +2,11 @@ const checkOnKeyUp = (inputdata) => {
     // get input value
     if (inputdata) {
         const keyword = inputdata.value;
+        console.log(keyword)
 
         // search mahasiswa using keyword
         const mahasiswas = aegis.filter((item) => {
-            return item.nim % 2 == 0 && (
+            return(
                 (item.nama_lengkap
                         .toLowerCase()
                         .includes(keyword.toLowerCase())) ||
